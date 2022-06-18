@@ -20,4 +20,10 @@ public class User {
 
     @Column
     private String mailAddress;
+
+    public User(long userId, String name, String mailAddress) {
+        setUserId(userId);
+        setName(name);
+        setMailAddress(mailAddress);
+    }
 }

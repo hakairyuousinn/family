@@ -13,7 +13,7 @@ import java.util.List;
 @RestController
 @RequestMapping("/api/user")
 public class UserController {
-
+    private final User user = new User(000001, "mori", "morimori@mori.com");
     @Autowired
     private UserRepository userRepository;
 
@@ -21,6 +21,12 @@ public class UserController {
     public List<User> getAllUsers() {
         System.out.println("list");
         return userRepository.getAllUsers();
+    }
+
+    @GetMapping("test")
+    public User test() {
+        System.out.println("test");
+        return user;
     }
 
     @PostMapping("/save")
