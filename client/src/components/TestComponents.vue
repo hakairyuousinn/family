@@ -1,6 +1,5 @@
 <template>
-  <div>
-    <h1>Test</h1>
+  <div class="test-component">
     <p>{{ message }}</p>
     <button @click="test">test</button>
   </div>
@@ -19,9 +18,12 @@ const api = ky.create({
 })
 
 async function test() {
-  message.value = await (await api.get("user/test")).json()
+  message.value = await api.get("user/test").json()
 } 
-
-
 </script>
 
+<style scoped>
+.test-component {
+  margin: 0.3rem;
+}
+</style>
