@@ -1,8 +1,7 @@
 package com.example.family.repository;
 
 
-import com.example.family.domain.model.entity.User;
-import org.springframework.stereotype.Repository;
+import com.example.family.domain.model.user.User;
 
 import java.util.List;
 

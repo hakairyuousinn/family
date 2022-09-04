@@ -1,4 +1,4 @@
-package com.example.family.domain.model.entity;
+package com.example.family.domain.model.user;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

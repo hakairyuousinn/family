@@ -1,6 +1,6 @@
 package com.example.family.controller;
 
-import com.example.family.domain.model.entity.User;
+import com.example.family.domain.model.user.User;
 import com.example.family.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;

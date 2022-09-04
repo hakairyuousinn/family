@@ -1,6 +1,7 @@
-package com.example.family.mapper;
+package com.example.family.datasource;
 
-import com.example.family.domain.model.entity.User;
+import com.example.family.domain.model.user.User;
+import com.example.family.mapper.UserMapper;
 import com.example.family.repository.UserRepository;
 import org.springframework.stereotype.Repository;
 
