@@ -1,7 +1,7 @@
 package com.example.family.controller;
 
-import com.example.family.domain.entity.User;
-import com.example.family.domain.repository.UserRepository;
+import com.example.family.domain.model.entity.User;
+import com.example.family.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -13,7 +13,7 @@ import java.util.List;
 @RestController
 @RequestMapping("/api/user")
 public class UserController {
-    private final User user = new User(000001, "mori", "morimori@mori.com");
+    private final User user = User.create("000001", "mori", "morimori@mori.com");
     @Autowired
     private UserRepository userRepository;
 
